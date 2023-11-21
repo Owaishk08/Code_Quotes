@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CodeQuotes.MainPage">
+
+    <Grid x:Name="background">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="1,1">
+                <GradientStopCollection>
+                    <GradientStop Offset="0" Color="DarkBlue"/>
+                    <GradientStop Offset="0.5" Color="Pink"/>
+                    <GradientStop Offset="1" Color="LightBlue"/>
+                </GradientStopCollection>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid Margin="25" RowDefinitions=".8*,.2*">
+            <Label FontSize="50"
+                   FontFamily="MainFont"
+                   HorizontalTextAlignment="Center"
+                   TextColor="White"
+                   x:Name="quote"
+                   Text="Where there is no Struggle, there is no Strenth ~ Oprah Winfrey"
+                   VerticalOptions="Center"/>
+            <Button Grid.Row="1"
+                    Text="Get Quotes"
+                    Opacity=".4"
+                    FontSize="25"
+                    x:Name="Btngetquotes"
+                    Clicked="Btngetquotes_Clicked"
+                    TextColor="Black"/>
+        </Grid>
+     </Grid>
+</ContentPage>
